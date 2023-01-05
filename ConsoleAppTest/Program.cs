@@ -12,22 +12,7 @@ namespace ConsoleAppTest
 
         void Mark()
         {
-            var studentsMarks = new List<StudentMarks>();
-            studentsMarks.Add(new StudentMarks { StudentId = 1, ExamId = 1, Marks = 50 });
-            studentsMarks.Add(new StudentMarks { StudentId = 1, ExamId = 2, Marks = 30 });
-            studentsMarks.Add(new StudentMarks { StudentId = 1, ExamId = 3, Marks = 60 });
-
-            studentsMarks.Add(new StudentMarks { StudentId = 2, ExamId = 1, Marks = 30 });
-            studentsMarks.Add(new StudentMarks { StudentId = 2, ExamId = 2, Marks = 40 });
-            studentsMarks.Add(new StudentMarks { StudentId = 2, ExamId = 3, Marks = 50 });
-
-            var s = studentsMarks.GroupBy(x => x.ExamId);
-            var s1 = new List<StudentMarks>();
-            foreach (var item in s)
-            {
-                item.OrderBy(x => x.Marks);
-              
-            }
+          // output 
             //            ExamaId StudentId
             //1              1
             //2               2
